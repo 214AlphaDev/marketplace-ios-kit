@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
   s.framework     = "UIKit"
   s.dependency 'Apollo', '0.10.0'
   s.dependency 'FlowKit', '0.0.2'
-  s.dependency 'RealmSwift', '3.16.1'
+  s.dependency 'RealmSwift', '3.20.0'
   s.dependency 'CommunityKit', '0.0.2'
 end
