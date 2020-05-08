@@ -1,0 +1,24 @@
+mutation EditMarketplaceListing($id: ListingID!, $name: ListingName!, $description: ListingDescription!, $photo: Base64ListingPhoto!, $priceCurrency: Currency!, $priceAmount: PriceAmount!) {
+  updateListing(input: { id: $id, name: $name, description: $description, photo: $photo, priceCurrency: $priceCurrency, priceAmount: $priceAmount }) {
+    listing {
+      id,
+      name,
+      description,
+      photo,
+      price {
+        currency,
+        amount
+      },
+      listedAt,
+      seller {
+        id,
+        emailAddress,
+        username,
+        firstName,
+        lastName,
+        profilePicture
+      }
+    },
+    error
+  }
+}

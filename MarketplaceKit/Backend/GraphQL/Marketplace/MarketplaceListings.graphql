@@ -1,0 +1,21 @@
+query MarketplaceListings($fromId: ListingID, $count: Int!) {
+  listings(start: $fromId, next: $count) {
+    id,
+    name,
+    description,
+    photo,
+    price {
+       currency,
+       amount
+    },
+    listedAt,
+    seller {
+      id,
+      emailAddress,
+      username,
+      firstName,
+      lastName,
+      profilePicture
+    }
+  }
+}

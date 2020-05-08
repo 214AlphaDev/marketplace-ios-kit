@@ -1,0 +1,1138 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B617298774AB71746AF8A29 /* Pods_MarketplaceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07131725BAA54F1CDBAD8B7A /* Pods_MarketplaceKit.framework */; };
+		68274BA622A9B49F00D02849 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68274B9C22A9B49F00D02849 /* API.swift */; };
+		68274BA822A9B53F00D02849 /* MarketplaceListingRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68274BA722A9B53F00D02849 /* MarketplaceListingRepositoryProtocol.swift */; };
+		68274BAA22A9B5C100D02849 /* MarketplaceServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68274BA922A9B5C100D02849 /* MarketplaceServiceProtocol.swift */; };
+		68274BAD22A9B67100D02849 /* MarketplaceListingDetails+MVP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E3E68622A980ED0051D131 /* MarketplaceListingDetails+MVP.swift */; };
+		68274BAE22A9B67300D02849 /* MarketplaceList+MVP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E3E68722A980ED0051D131 /* MarketplaceList+MVP.swift */; };
+		68274BAF22A9B67500D02849 /* MarketplaceListingEdit+MVP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E3E68922A980ED0051D131 /* MarketplaceListingEdit+MVP.swift */; };
+		68274BB022A9B67800D02849 /* MarketplaceListingCreate+MVP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E3E68822A980ED0051D131 /* MarketplaceListingCreate+MVP.swift */; };
+		68274BB122A9B68200D02849 /* UUIDV4+ValueObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E3E67822A980D40051D131 /* UUIDV4+ValueObject.swift */; };
+		68274BB322A9B68A00D02849 /* MarketplaceBackendProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E3E67B22A980DC0051D131 /* MarketplaceBackendProtocol.swift */; };
+		68274BC422AA600A00D02849 /* MarketplaceListings.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 68274BC122AA600A00D02849 /* MarketplaceListings.graphql */; };
+		68274BC522AA600A00D02849 /* CreateMarketplaceListing.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 68274BC222AA600A00D02849 /* CreateMarketplaceListing.graphql */; };
+		68274BC622AA600A00D02849 /* EditMarketplaceListing.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 68274BC322AA600A00D02849 /* EditMarketplaceListing.graphql */; };
+		68274BC822AA7D9500D02849 /* MarketplaceBackend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68274BC722AA7D9500D02849 /* MarketplaceBackend.swift */; };
+		68274BCB22AA7DA000D02849 /* Errors+Marketplace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68274BC922AA7DA000D02849 /* Errors+Marketplace.swift */; };
+		68274BCC22AA7DA000D02849 /* MarketplaceListing+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68274BCA22AA7DA000D02849 /* MarketplaceListing+Response.swift */; };
+		68274BCE22AA8FE800D02849 /* MarketplaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68274BCD22AA8FE800D02849 /* MarketplaceService.swift */; };
+		68274BD522AA90A300D02849 /* MarketplaceListingCreatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68274BD122AA90A300D02849 /* MarketplaceListingCreatePresenter.swift */; };
+		68274BD622AA90A300D02849 /* MarketplaceListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68274BD222AA90A300D02849 /* MarketplaceListPresenter.swift */; };
+		68274BD722AA90A300D02849 /* MarketplaceListingDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68274BD322AA90A300D02849 /* MarketplaceListingDetailsPresenter.swift */; };
+		68274BD822AA90A300D02849 /* MarketplaceListingEditPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68274BD422AA90A300D02849 /* MarketplaceListingEditPresenter.swift */; };
+		68274BE122AA93DB00D02849 /* MarketplaceListFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68274BDC22AA93DB00D02849 /* MarketplaceListFlow.swift */; };
+		68274BE222AA93DB00D02849 /* MarketplaceListingCreateFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68274BDD22AA93DB00D02849 /* MarketplaceListingCreateFlow.swift */; };
+		68274BE322AA93DB00D02849 /* MarketplaceListingEditFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68274BDE22AA93DB00D02849 /* MarketplaceListingEditFlow.swift */; };
+		68274BE422AA93DB00D02849 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68274BDF22AA93DB00D02849 /* Actions.swift */; };
+		68274BE622AA946B00D02849 /* MarketplaceListingDetailsFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68274BE522AA946B00D02849 /* MarketplaceListingDetailsFlow.swift */; };
+		68274BE822AA99A500D02849 /* MarketplaceListingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68274BE722AA99A500D02849 /* MarketplaceListingRepository.swift */; };
+		68274BEA22AA9A6400D02849 /* MarketplaceKitDatabaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68274BE922AA9A6400D02849 /* MarketplaceKitDatabaseFactory.swift */; };
+		68274BF422AAB2CA00D02849 /* Price+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68274BF322AAB2CA00D02849 /* Price+Response.swift */; };
+		68274BF622AAB33800D02849 /* Currency+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68274BF522AAB33800D02849 /* Currency+Response.swift */; };
+		6852503522AE67B60068A9EA /* TimeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6852503422AE67B60068A9EA /* TimeConverter.swift */; };
+		6852504022AE747B0068A9EA /* PriceAmount+ValueObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6852503722AE747B0068A9EA /* PriceAmount+ValueObject.swift */; };
+		6852504122AE747B0068A9EA /* Currency+ValueObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6852503822AE747B0068A9EA /* Currency+ValueObject.swift */; };
+		6852504222AE747B0068A9EA /* ListingPhoto+ValueObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6852503922AE747B0068A9EA /* ListingPhoto+ValueObject.swift */; };
+		6852504322AE747B0068A9EA /* Price+ValueObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6852503A22AE747B0068A9EA /* Price+ValueObject.swift */; };
+		6852504422AE747B0068A9EA /* ProperName+ValueObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6852503C22AE747B0068A9EA /* ProperName+ValueObject.swift */; };
+		6852504522AE747B0068A9EA /* ProfilePicture+ValueObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6852503D22AE747B0068A9EA /* ProfilePicture+ValueObject.swift */; };
+		6852504622AE747B0068A9EA /* Username+ValueObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6852503E22AE747B0068A9EA /* Username+ValueObject.swift */; };
+		6852504722AE747B0068A9EA /* Email+ValueObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6852503F22AE747B0068A9EA /* Email+ValueObject.swift */; };
+		6852504922AE75800068A9EA /* Seller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6852504822AE75800068A9EA /* Seller.swift */; };
+		6852504B22AE770C0068A9EA /* SellerRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6852504A22AE770C0068A9EA /* SellerRepositoryProtocol.swift */; };
+		6852504D22AE77410068A9EA /* SellerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6852504C22AE77410068A9EA /* SellerRepository.swift */; };
+		6852504F22AE7CF20068A9EA /* Seller+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6852504E22AE7CF20068A9EA /* Seller+Response.swift */; };
+		6852506122AF9DAF0068A9EA /* Price+ValueObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6852506022AF9DAF0068A9EA /* Price+ValueObject.swift */; };
+		68E3E62822A8EE1A0051D131 /* MarketplaceKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 68E3E62622A8EE1A0051D131 /* MarketplaceKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68E3E63522A8EE560051D131 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E3E63422A8EE560051D131 /* AppDelegate.swift */; };
+		68E3E65522A8F38A0051D131 /* MarketplaceKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 68E3E65422A8F38A0051D131 /* MarketplaceKit.podspec */; };
+		68E3E67022A97F590051D131 /* ErrorDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E3E66D22A97F590051D131 /* ErrorDescription.swift */; };
+		68E3E67122A97F590051D131 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E3E66E22A97F590051D131 /* Response.swift */; };
+		68E3E67222A97F590051D131 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E3E66F22A97F590051D131 /* Errors.swift */; };
+		68E3E69A22A995930051D131 /* MarketplaceListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E3E69922A995930051D131 /* MarketplaceListing.swift */; };
+		68E3E69C22A995AC0051D131 /* CreatingMarketplaceListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E3E69B22A995AC0051D131 /* CreatingMarketplaceListing.swift */; };
+		946A2EE87C983D7C1DEAD3C7 /* Pods_MarketplaceKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC4253408BCE7CE87A3C0268 /* Pods_MarketplaceKitDemo.framework */; };
+		CA0A5125BD194A65E4A20E95 /* Pods_MarketplaceKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878CAD201B571EC903C19F3C /* Pods_MarketplaceKitTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68E3E64D22A8EEBA0051D131 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68E3E61A22A8EE1A0051D131 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68E3E63122A8EE560051D131;
+			remoteInfo = MarketplaceKitDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07131725BAA54F1CDBAD8B7A /* Pods_MarketplaceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarketplaceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E489D6EF354E1AEAD4EB0BF /* Pods-MarketplaceKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketplaceKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarketplaceKitTests/Pods-MarketplaceKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4FA3FBEB1747418F306E5450 /* Pods-MarketplaceKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketplaceKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarketplaceKitDemo/Pods-MarketplaceKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		68274B9C22A9B49F00D02849 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		68274BA722A9B53F00D02849 /* MarketplaceListingRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketplaceListingRepositoryProtocol.swift; sourceTree = "<group>"; };
+		68274BA922A9B5C100D02849 /* MarketplaceServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketplaceServiceProtocol.swift; sourceTree = "<group>"; };
+		68274BC122AA600A00D02849 /* MarketplaceListings.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MarketplaceListings.graphql; sourceTree = "<group>"; };
+		68274BC222AA600A00D02849 /* CreateMarketplaceListing.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CreateMarketplaceListing.graphql; sourceTree = "<group>"; };
+		68274BC322AA600A00D02849 /* EditMarketplaceListing.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EditMarketplaceListing.graphql; sourceTree = "<group>"; };
+		68274BC722AA7D9500D02849 /* MarketplaceBackend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketplaceBackend.swift; sourceTree = "<group>"; };
+		68274BC922AA7DA000D02849 /* Errors+Marketplace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Errors+Marketplace.swift"; sourceTree = "<group>"; };
+		68274BCA22AA7DA000D02849 /* MarketplaceListing+Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MarketplaceListing+Response.swift"; sourceTree = "<group>"; };
+		68274BCD22AA8FE800D02849 /* MarketplaceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketplaceService.swift; sourceTree = "<group>"; };
+		68274BD122AA90A300D02849 /* MarketplaceListingCreatePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketplaceListingCreatePresenter.swift; sourceTree = "<group>"; };
+		68274BD222AA90A300D02849 /* MarketplaceListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketplaceListPresenter.swift; sourceTree = "<group>"; };
+		68274BD322AA90A300D02849 /* MarketplaceListingDetailsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketplaceListingDetailsPresenter.swift; sourceTree = "<group>"; };
+		68274BD422AA90A300D02849 /* MarketplaceListingEditPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketplaceListingEditPresenter.swift; sourceTree = "<group>"; };
+		68274BDC22AA93DB00D02849 /* MarketplaceListFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketplaceListFlow.swift; sourceTree = "<group>"; };
+		68274BDD22AA93DB00D02849 /* MarketplaceListingCreateFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketplaceListingCreateFlow.swift; sourceTree = "<group>"; };
+		68274BDE22AA93DB00D02849 /* MarketplaceListingEditFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketplaceListingEditFlow.swift; sourceTree = "<group>"; };
+		68274BDF22AA93DB00D02849 /* Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		68274BE522AA946B00D02849 /* MarketplaceListingDetailsFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketplaceListingDetailsFlow.swift; sourceTree = "<group>"; };
+		68274BE722AA99A500D02849 /* MarketplaceListingRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketplaceListingRepository.swift; sourceTree = "<group>"; };
+		68274BE922AA9A6400D02849 /* MarketplaceKitDatabaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketplaceKitDatabaseFactory.swift; sourceTree = "<group>"; };
+		68274BF322AAB2CA00D02849 /* Price+Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Price+Response.swift"; sourceTree = "<group>"; };
+		68274BF522AAB33800D02849 /* Currency+Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Currency+Response.swift"; sourceTree = "<group>"; };
+		6852503422AE67B60068A9EA /* TimeConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeConverter.swift; sourceTree = "<group>"; };
+		6852503722AE747B0068A9EA /* PriceAmount+ValueObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PriceAmount+ValueObject.swift"; sourceTree = "<group>"; };
+		6852503822AE747B0068A9EA /* Currency+ValueObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Currency+ValueObject.swift"; sourceTree = "<group>"; };
+		6852503922AE747B0068A9EA /* ListingPhoto+ValueObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ListingPhoto+ValueObject.swift"; sourceTree = "<group>"; };
+		6852503A22AE747B0068A9EA /* Price+ValueObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Price+ValueObject.swift"; sourceTree = "<group>"; };
+		6852503C22AE747B0068A9EA /* ProperName+ValueObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProperName+ValueObject.swift"; sourceTree = "<group>"; };
+		6852503D22AE747B0068A9EA /* ProfilePicture+ValueObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProfilePicture+ValueObject.swift"; sourceTree = "<group>"; };
+		6852503E22AE747B0068A9EA /* Username+ValueObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Username+ValueObject.swift"; sourceTree = "<group>"; };
+		6852503F22AE747B0068A9EA /* Email+ValueObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Email+ValueObject.swift"; sourceTree = "<group>"; };
+		6852504822AE75800068A9EA /* Seller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seller.swift; sourceTree = "<group>"; };
+		6852504A22AE770C0068A9EA /* SellerRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerRepositoryProtocol.swift; sourceTree = "<group>"; };
+		6852504C22AE77410068A9EA /* SellerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerRepository.swift; sourceTree = "<group>"; };
+		6852504E22AE7CF20068A9EA /* Seller+Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Seller+Response.swift"; sourceTree = "<group>"; };
+		6852506022AF9DAF0068A9EA /* Price+ValueObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Price+ValueObject.swift"; sourceTree = "<group>"; };
+		68E3E62322A8EE1A0051D131 /* MarketplaceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MarketplaceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68E3E62622A8EE1A0051D131 /* MarketplaceKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarketplaceKit.h; sourceTree = "<group>"; };
+		68E3E62722A8EE1A0051D131 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68E3E63222A8EE560051D131 /* MarketplaceKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketplaceKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68E3E63422A8EE560051D131 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		68E3E64022A8EE580051D131 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68E3E64822A8EEBA0051D131 /* MarketplaceKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarketplaceKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68E3E64C22A8EEBA0051D131 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68E3E65422A8F38A0051D131 /* MarketplaceKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MarketplaceKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		68E3E66D22A97F590051D131 /* ErrorDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorDescription.swift; sourceTree = "<group>"; };
+		68E3E66E22A97F590051D131 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		68E3E66F22A97F590051D131 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		68E3E67822A980D40051D131 /* UUIDV4+ValueObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UUIDV4+ValueObject.swift"; sourceTree = "<group>"; };
+		68E3E67B22A980DC0051D131 /* MarketplaceBackendProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketplaceBackendProtocol.swift; sourceTree = "<group>"; };
+		68E3E68622A980ED0051D131 /* MarketplaceListingDetails+MVP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MarketplaceListingDetails+MVP.swift"; sourceTree = "<group>"; };
+		68E3E68722A980ED0051D131 /* MarketplaceList+MVP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MarketplaceList+MVP.swift"; sourceTree = "<group>"; };
+		68E3E68822A980ED0051D131 /* MarketplaceListingCreate+MVP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MarketplaceListingCreate+MVP.swift"; sourceTree = "<group>"; };
+		68E3E68922A980ED0051D131 /* MarketplaceListingEdit+MVP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MarketplaceListingEdit+MVP.swift"; sourceTree = "<group>"; };
+		68E3E69922A995930051D131 /* MarketplaceListing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketplaceListing.swift; sourceTree = "<group>"; };
+		68E3E69B22A995AC0051D131 /* CreatingMarketplaceListing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatingMarketplaceListing.swift; sourceTree = "<group>"; };
+		878CAD201B571EC903C19F3C /* Pods_MarketplaceKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarketplaceKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5918165A188981C3B26AEF5 /* Pods-MarketplaceKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketplaceKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarketplaceKitTests/Pods-MarketplaceKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		B1A4691D633818ED860D63C3 /* Pods-MarketplaceKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketplaceKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarketplaceKit/Pods-MarketplaceKit.release.xcconfig"; sourceTree = "<group>"; };
+		CC4253408BCE7CE87A3C0268 /* Pods_MarketplaceKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarketplaceKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCA4750252FCBC3252BFE2EF /* Pods-MarketplaceKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketplaceKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarketplaceKit/Pods-MarketplaceKit.debug.xcconfig"; sourceTree = "<group>"; };
+		E1B38739C5D72EC356274DA8 /* Pods-MarketplaceKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketplaceKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarketplaceKitDemo/Pods-MarketplaceKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68E3E62022A8EE1A0051D131 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B617298774AB71746AF8A29 /* Pods_MarketplaceKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68E3E62F22A8EE560051D131 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				946A2EE87C983D7C1DEAD3C7 /* Pods_MarketplaceKitDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68E3E64522A8EEBA0051D131 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA0A5125BD194A65E4A20E95 /* Pods_MarketplaceKitTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E6C9CA8501533EC381E3E00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07131725BAA54F1CDBAD8B7A /* Pods_MarketplaceKit.framework */,
+				CC4253408BCE7CE87A3C0268 /* Pods_MarketplaceKitDemo.framework */,
+				878CAD201B571EC903C19F3C /* Pods_MarketplaceKitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68274B8E22A9B49F00D02849 /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				68274B8F22A9B49F00D02849 /* Mapping */,
+				68274B9422A9B49F00D02849 /* GraphQL */,
+				68274BC722AA7D9500D02849 /* MarketplaceBackend.swift */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
+		68274B8F22A9B49F00D02849 /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				6852503322AE67AE0068A9EA /* Utils */,
+				68274B9022A9B49F00D02849 /* Marketplace */,
+			);
+			path = Mapping;
+			sourceTree = "<group>";
+		};
+		68274B9022A9B49F00D02849 /* Marketplace */ = {
+			isa = PBXGroup;
+			children = (
+				68274BC922AA7DA000D02849 /* Errors+Marketplace.swift */,
+				68274BCA22AA7DA000D02849 /* MarketplaceListing+Response.swift */,
+				68274BF322AAB2CA00D02849 /* Price+Response.swift */,
+				68274BF522AAB33800D02849 /* Currency+Response.swift */,
+				6852504E22AE7CF20068A9EA /* Seller+Response.swift */,
+			);
+			path = Marketplace;
+			sourceTree = "<group>";
+		};
+		68274B9422A9B49F00D02849 /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				68274B9522A9B49F00D02849 /* Marketplace */,
+				68274B9C22A9B49F00D02849 /* API.swift */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		68274B9522A9B49F00D02849 /* Marketplace */ = {
+			isa = PBXGroup;
+			children = (
+				68274BC322AA600A00D02849 /* EditMarketplaceListing.graphql */,
+				68274BC222AA600A00D02849 /* CreateMarketplaceListing.graphql */,
+				68274BC122AA600A00D02849 /* MarketplaceListings.graphql */,
+			);
+			path = Marketplace;
+			sourceTree = "<group>";
+		};
+		68274BCF22AA90A300D02849 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				68274BD022AA90A300D02849 /* MarketplaceFlow */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		68274BD022AA90A300D02849 /* MarketplaceFlow */ = {
+			isa = PBXGroup;
+			children = (
+				68274BD122AA90A300D02849 /* MarketplaceListingCreatePresenter.swift */,
+				68274BD222AA90A300D02849 /* MarketplaceListPresenter.swift */,
+				68274BD322AA90A300D02849 /* MarketplaceListingDetailsPresenter.swift */,
+				68274BD422AA90A300D02849 /* MarketplaceListingEditPresenter.swift */,
+			);
+			path = MarketplaceFlow;
+			sourceTree = "<group>";
+		};
+		68274BD922AA93DB00D02849 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				68274BDA22AA93DB00D02849 /* MarketplaceFlow */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		68274BDA22AA93DB00D02849 /* MarketplaceFlow */ = {
+			isa = PBXGroup;
+			children = (
+				68274BE522AA946B00D02849 /* MarketplaceListingDetailsFlow.swift */,
+				68274BDC22AA93DB00D02849 /* MarketplaceListFlow.swift */,
+				68274BDD22AA93DB00D02849 /* MarketplaceListingCreateFlow.swift */,
+				68274BDE22AA93DB00D02849 /* MarketplaceListingEditFlow.swift */,
+				68274BDF22AA93DB00D02849 /* Actions.swift */,
+			);
+			path = MarketplaceFlow;
+			sourceTree = "<group>";
+		};
+		6852503322AE67AE0068A9EA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6852503422AE67B60068A9EA /* TimeConverter.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6852503622AE747B0068A9EA /* Listing */ = {
+			isa = PBXGroup;
+			children = (
+				6852503722AE747B0068A9EA /* PriceAmount+ValueObject.swift */,
+				6852503822AE747B0068A9EA /* Currency+ValueObject.swift */,
+				6852503922AE747B0068A9EA /* ListingPhoto+ValueObject.swift */,
+				6852503A22AE747B0068A9EA /* Price+ValueObject.swift */,
+			);
+			path = Listing;
+			sourceTree = "<group>";
+		};
+		6852503B22AE747B0068A9EA /* Seller */ = {
+			isa = PBXGroup;
+			children = (
+				68E3E67822A980D40051D131 /* UUIDV4+ValueObject.swift */,
+				6852503C22AE747B0068A9EA /* ProperName+ValueObject.swift */,
+				6852503D22AE747B0068A9EA /* ProfilePicture+ValueObject.swift */,
+				6852503E22AE747B0068A9EA /* Username+ValueObject.swift */,
+				6852503F22AE747B0068A9EA /* Email+ValueObject.swift */,
+			);
+			path = Seller;
+			sourceTree = "<group>";
+		};
+		6852505B22AF9D910068A9EA /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				6852505C22AF9D910068A9EA /* ValueObjects */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		6852505C22AF9D910068A9EA /* ValueObjects */ = {
+			isa = PBXGroup;
+			children = (
+				6852505D22AF9D910068A9EA /* Listing */,
+			);
+			path = ValueObjects;
+			sourceTree = "<group>";
+		};
+		6852505D22AF9D910068A9EA /* Listing */ = {
+			isa = PBXGroup;
+			children = (
+				6852506022AF9DAF0068A9EA /* Price+ValueObject.swift */,
+			);
+			path = Listing;
+			sourceTree = "<group>";
+		};
+		68E3E61922A8EE1A0051D131 = {
+			isa = PBXGroup;
+			children = (
+				68E3E65422A8F38A0051D131 /* MarketplaceKit.podspec */,
+				68E3E62522A8EE1A0051D131 /* MarketplaceKit */,
+				68E3E63322A8EE560051D131 /* MarketplaceKitDemo */,
+				68E3E64922A8EEBA0051D131 /* MarketplaceKitTests */,
+				68E3E62422A8EE1A0051D131 /* Products */,
+				865D0292FBD509883DA36E44 /* Pods */,
+				3E6C9CA8501533EC381E3E00 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		68E3E62422A8EE1A0051D131 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68E3E62322A8EE1A0051D131 /* MarketplaceKit.framework */,
+				68E3E63222A8EE560051D131 /* MarketplaceKitDemo.app */,
+				68E3E64822A8EEBA0051D131 /* MarketplaceKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68E3E62522A8EE1A0051D131 /* MarketplaceKit */ = {
+			isa = PBXGroup;
+			children = (
+				68E3E66C22A97F590051D131 /* Utils */,
+				68E3E67322A980D40051D131 /* Types */,
+				68E3E67A22A980DC0051D131 /* BackendProtocols */,
+				68274B8E22A9B49F00D02849 /* Backend */,
+				68E3E67C22A980E00051D131 /* RepositoryProtocols */,
+				68E3E67E22A980E30051D131 /* Repositories */,
+				68E3E68022A980E60051D131 /* ServiceProtocols */,
+				68E3E68222A980EA0051D131 /* Services */,
+				68E3E68422A980ED0051D131 /* MVPProtocols */,
+				68274BCF22AA90A300D02849 /* Presenters */,
+				68274BD922AA93DB00D02849 /* Flows */,
+				68274BE922AA9A6400D02849 /* MarketplaceKitDatabaseFactory.swift */,
+				68E3E62622A8EE1A0051D131 /* MarketplaceKit.h */,
+				68E3E62722A8EE1A0051D131 /* Info.plist */,
+			);
+			path = MarketplaceKit;
+			sourceTree = "<group>";
+		};
+		68E3E63322A8EE560051D131 /* MarketplaceKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				68E3E63422A8EE560051D131 /* AppDelegate.swift */,
+				68E3E64022A8EE580051D131 /* Info.plist */,
+			);
+			path = MarketplaceKitDemo;
+			sourceTree = "<group>";
+		};
+		68E3E64922A8EEBA0051D131 /* MarketplaceKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				6852505B22AF9D910068A9EA /* Types */,
+				68E3E64C22A8EEBA0051D131 /* Info.plist */,
+			);
+			path = MarketplaceKitTests;
+			sourceTree = "<group>";
+		};
+		68E3E66C22A97F590051D131 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				68E3E66D22A97F590051D131 /* ErrorDescription.swift */,
+				68E3E66E22A97F590051D131 /* Response.swift */,
+				68E3E66F22A97F590051D131 /* Errors.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		68E3E67322A980D40051D131 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				68E3E67422A980D40051D131 /* Entities */,
+				68E3E67722A980D40051D131 /* ValueObjects */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		68E3E67422A980D40051D131 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				68E3E69B22A995AC0051D131 /* CreatingMarketplaceListing.swift */,
+				68E3E69922A995930051D131 /* MarketplaceListing.swift */,
+				6852504822AE75800068A9EA /* Seller.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		68E3E67722A980D40051D131 /* ValueObjects */ = {
+			isa = PBXGroup;
+			children = (
+				6852503622AE747B0068A9EA /* Listing */,
+				6852503B22AE747B0068A9EA /* Seller */,
+			);
+			path = ValueObjects;
+			sourceTree = "<group>";
+		};
+		68E3E67A22A980DC0051D131 /* BackendProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				68E3E67B22A980DC0051D131 /* MarketplaceBackendProtocol.swift */,
+			);
+			path = BackendProtocols;
+			sourceTree = "<group>";
+		};
+		68E3E67C22A980E00051D131 /* RepositoryProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				68274BA722A9B53F00D02849 /* MarketplaceListingRepositoryProtocol.swift */,
+				6852504A22AE770C0068A9EA /* SellerRepositoryProtocol.swift */,
+			);
+			path = RepositoryProtocols;
+			sourceTree = "<group>";
+		};
+		68E3E67E22A980E30051D131 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				68274BE722AA99A500D02849 /* MarketplaceListingRepository.swift */,
+				6852504C22AE77410068A9EA /* SellerRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		68E3E68022A980E60051D131 /* ServiceProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				68274BA922A9B5C100D02849 /* MarketplaceServiceProtocol.swift */,
+			);
+			path = ServiceProtocols;
+			sourceTree = "<group>";
+		};
+		68E3E68222A980EA0051D131 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				68274BCD22AA8FE800D02849 /* MarketplaceService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		68E3E68422A980ED0051D131 /* MVPProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				68E3E68522A980ED0051D131 /* MarketplaceFlow */,
+			);
+			path = MVPProtocols;
+			sourceTree = "<group>";
+		};
+		68E3E68522A980ED0051D131 /* MarketplaceFlow */ = {
+			isa = PBXGroup;
+			children = (
+				68E3E68622A980ED0051D131 /* MarketplaceListingDetails+MVP.swift */,
+				68E3E68722A980ED0051D131 /* MarketplaceList+MVP.swift */,
+				68E3E68822A980ED0051D131 /* MarketplaceListingCreate+MVP.swift */,
+				68E3E68922A980ED0051D131 /* MarketplaceListingEdit+MVP.swift */,
+			);
+			path = MarketplaceFlow;
+			sourceTree = "<group>";
+		};
+		865D0292FBD509883DA36E44 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCA4750252FCBC3252BFE2EF /* Pods-MarketplaceKit.debug.xcconfig */,
+				B1A4691D633818ED860D63C3 /* Pods-MarketplaceKit.release.xcconfig */,
+				4FA3FBEB1747418F306E5450 /* Pods-MarketplaceKitDemo.debug.xcconfig */,
+				E1B38739C5D72EC356274DA8 /* Pods-MarketplaceKitDemo.release.xcconfig */,
+				4E489D6EF354E1AEAD4EB0BF /* Pods-MarketplaceKitTests.debug.xcconfig */,
+				A5918165A188981C3B26AEF5 /* Pods-MarketplaceKitTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		68E3E61E22A8EE1A0051D131 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68E3E62822A8EE1A0051D131 /* MarketplaceKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		68E3E62222A8EE1A0051D131 /* MarketplaceKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68E3E62B22A8EE1A0051D131 /* Build configuration list for PBXNativeTarget "MarketplaceKit" */;
+			buildPhases = (
+				A2D0045BAD7943314A9FF109 /* [CP] Check Pods Manifest.lock */,
+				68E3E61E22A8EE1A0051D131 /* Headers */,
+				68E3E65D22A8F3F30051D131 /* Generate Apollo GraphQL API */,
+				68E3E61F22A8EE1A0051D131 /* Sources */,
+				68E3E62022A8EE1A0051D131 /* Frameworks */,
+				68E3E62122A8EE1A0051D131 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarketplaceKit;
+			productName = MarketplaceKit;
+			productReference = 68E3E62322A8EE1A0051D131 /* MarketplaceKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		68E3E63122A8EE560051D131 /* MarketplaceKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68E3E64122A8EE580051D131 /* Build configuration list for PBXNativeTarget "MarketplaceKitDemo" */;
+			buildPhases = (
+				D1B4FD8B9AD6F887B148E696 /* [CP] Check Pods Manifest.lock */,
+				68E3E62E22A8EE560051D131 /* Sources */,
+				68E3E62F22A8EE560051D131 /* Frameworks */,
+				68E3E63022A8EE560051D131 /* Resources */,
+				2A65E2FA7AD060705E1474FE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarketplaceKitDemo;
+			productName = MarketplaceKitDemo;
+			productReference = 68E3E63222A8EE560051D131 /* MarketplaceKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		68E3E64722A8EEBA0051D131 /* MarketplaceKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68E3E64F22A8EEBA0051D131 /* Build configuration list for PBXNativeTarget "MarketplaceKitTests" */;
+			buildPhases = (
+				19079FCB92793D5D99B110E0 /* [CP] Check Pods Manifest.lock */,
+				68E3E64422A8EEBA0051D131 /* Sources */,
+				68E3E64522A8EEBA0051D131 /* Frameworks */,
+				68E3E64622A8EEBA0051D131 /* Resources */,
+				9D87880D1F73AE8215CF0B79 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68E3E64E22A8EEBA0051D131 /* PBXTargetDependency */,
+			);
+			name = MarketplaceKitTests;
+			productName = MarketplaceKitTests;
+			productReference = 68E3E64822A8EEBA0051D131 /* MarketplaceKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68E3E61A22A8EE1A0051D131 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = 214alpha;
+				TargetAttributes = {
+					68E3E62222A8EE1A0051D131 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					68E3E63122A8EE560051D131 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					68E3E64722A8EEBA0051D131 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 68E3E63122A8EE560051D131;
+					};
+				};
+			};
+			buildConfigurationList = 68E3E61D22A8EE1A0051D131 /* Build configuration list for PBXProject "MarketplaceKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68E3E61922A8EE1A0051D131;
+			productRefGroup = 68E3E62422A8EE1A0051D131 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68E3E62222A8EE1A0051D131 /* MarketplaceKit */,
+				68E3E63122A8EE560051D131 /* MarketplaceKitDemo */,
+				68E3E64722A8EEBA0051D131 /* MarketplaceKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68E3E62122A8EE1A0051D131 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68274BC622AA600A00D02849 /* EditMarketplaceListing.graphql in Resources */,
+				68274BC422AA600A00D02849 /* MarketplaceListings.graphql in Resources */,
+				68E3E65522A8F38A0051D131 /* MarketplaceKit.podspec in Resources */,
+				68274BC522AA600A00D02849 /* CreateMarketplaceListing.graphql in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68E3E63022A8EE560051D131 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68E3E64622A8EEBA0051D131 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19079FCB92793D5D99B110E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarketplaceKitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A65E2FA7AD060705E1474FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarketplaceKitDemo/Pods-MarketplaceKitDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarketplaceKitDemo/Pods-MarketplaceKitDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarketplaceKitDemo/Pods-MarketplaceKitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68E3E65D22A8F3F30051D131 /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APOLLO_FRAMEWORK_PATH=\"$(eval find $FRAMEWORK_SEARCH_PATHS -name \"Apollo.framework\" -maxdepth 1)\"\n\nif [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\necho \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\nexit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n$APOLLO_FRAMEWORK_PATH/check-and-run-apollo-cli.sh codegen:generate --queries=\"$(find . -name '*.graphql')\" --schema=schema.json Backend/GraphQL/API.swift --namespace=\"API\" \n";
+		};
+		9D87880D1F73AE8215CF0B79 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarketplaceKitTests/Pods-MarketplaceKitTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarketplaceKitTests/Pods-MarketplaceKitTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarketplaceKitTests/Pods-MarketplaceKitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2D0045BAD7943314A9FF109 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarketplaceKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1B4FD8B9AD6F887B148E696 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarketplaceKitDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68E3E61F22A8EE1A0051D131 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68E3E67222A97F590051D131 /* Errors.swift in Sources */,
+				6852504722AE747B0068A9EA /* Email+ValueObject.swift in Sources */,
+				68274BE322AA93DB00D02849 /* MarketplaceListingEditFlow.swift in Sources */,
+				6852504D22AE77410068A9EA /* SellerRepository.swift in Sources */,
+				68E3E69A22A995930051D131 /* MarketplaceListing.swift in Sources */,
+				6852504522AE747B0068A9EA /* ProfilePicture+ValueObject.swift in Sources */,
+				68274BF622AAB33800D02849 /* Currency+Response.swift in Sources */,
+				68274BAE22A9B67300D02849 /* MarketplaceList+MVP.swift in Sources */,
+				68274BD622AA90A300D02849 /* MarketplaceListPresenter.swift in Sources */,
+				68E3E69C22A995AC0051D131 /* CreatingMarketplaceListing.swift in Sources */,
+				68274BE822AA99A500D02849 /* MarketplaceListingRepository.swift in Sources */,
+				68274BCE22AA8FE800D02849 /* MarketplaceService.swift in Sources */,
+				68274BC822AA7D9500D02849 /* MarketplaceBackend.swift in Sources */,
+				68274BE122AA93DB00D02849 /* MarketplaceListFlow.swift in Sources */,
+				68274BAD22A9B67100D02849 /* MarketplaceListingDetails+MVP.swift in Sources */,
+				68274BB022A9B67800D02849 /* MarketplaceListingCreate+MVP.swift in Sources */,
+				68274BCC22AA7DA000D02849 /* MarketplaceListing+Response.swift in Sources */,
+				6852504022AE747B0068A9EA /* PriceAmount+ValueObject.swift in Sources */,
+				6852504222AE747B0068A9EA /* ListingPhoto+ValueObject.swift in Sources */,
+				68274BA622A9B49F00D02849 /* API.swift in Sources */,
+				68274BF422AAB2CA00D02849 /* Price+Response.swift in Sources */,
+				6852504122AE747B0068A9EA /* Currency+ValueObject.swift in Sources */,
+				68274BE422AA93DB00D02849 /* Actions.swift in Sources */,
+				68274BAF22A9B67500D02849 /* MarketplaceListingEdit+MVP.swift in Sources */,
+				6852504622AE747B0068A9EA /* Username+ValueObject.swift in Sources */,
+				68E3E67122A97F590051D131 /* Response.swift in Sources */,
+				6852503522AE67B60068A9EA /* TimeConverter.swift in Sources */,
+				68E3E67022A97F590051D131 /* ErrorDescription.swift in Sources */,
+				68274BD822AA90A300D02849 /* MarketplaceListingEditPresenter.swift in Sources */,
+				68274BCB22AA7DA000D02849 /* Errors+Marketplace.swift in Sources */,
+				68274BB322A9B68A00D02849 /* MarketplaceBackendProtocol.swift in Sources */,
+				68274BAA22A9B5C100D02849 /* MarketplaceServiceProtocol.swift in Sources */,
+				68274BA822A9B53F00D02849 /* MarketplaceListingRepositoryProtocol.swift in Sources */,
+				6852504F22AE7CF20068A9EA /* Seller+Response.swift in Sources */,
+				6852504422AE747B0068A9EA /* ProperName+ValueObject.swift in Sources */,
+				68274BD722AA90A300D02849 /* MarketplaceListingDetailsPresenter.swift in Sources */,
+				6852504B22AE770C0068A9EA /* SellerRepositoryProtocol.swift in Sources */,
+				68274BD522AA90A300D02849 /* MarketplaceListingCreatePresenter.swift in Sources */,
+				68274BB122A9B68200D02849 /* UUIDV4+ValueObject.swift in Sources */,
+				68274BE222AA93DB00D02849 /* MarketplaceListingCreateFlow.swift in Sources */,
+				6852504322AE747B0068A9EA /* Price+ValueObject.swift in Sources */,
+				68274BE622AA946B00D02849 /* MarketplaceListingDetailsFlow.swift in Sources */,
+				6852504922AE75800068A9EA /* Seller.swift in Sources */,
+				68274BEA22AA9A6400D02849 /* MarketplaceKitDatabaseFactory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68E3E62E22A8EE560051D131 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68E3E63522A8EE560051D131 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68E3E64422A8EEBA0051D131 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6852506122AF9DAF0068A9EA /* Price+ValueObject.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68E3E64E22A8EEBA0051D131 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68E3E63122A8EE560051D131 /* MarketplaceKitDemo */;
+			targetProxy = 68E3E64D22A8EEBA0051D131 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		68E3E62922A8EE1A0051D131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		68E3E62A22A8EE1A0051D131 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		68E3E62C22A8EE1A0051D131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCA4750252FCBC3252BFE2EF /* Pods-MarketplaceKit.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9TMYGKKAAG;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MarketplaceKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.214alpha.MarketplaceKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68E3E62D22A8EE1A0051D131 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1A4691D633818ED860D63C3 /* Pods-MarketplaceKit.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9TMYGKKAAG;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MarketplaceKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.214alpha.MarketplaceKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		68E3E64222A8EE580051D131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FA3FBEB1747418F306E5450 /* Pods-MarketplaceKitDemo.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TMYGKKAAG;
+				INFOPLIST_FILE = MarketplaceKitDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.214alpha.MarketplaceKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68E3E64322A8EE580051D131 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1B38739C5D72EC356274DA8 /* Pods-MarketplaceKitDemo.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TMYGKKAAG;
+				INFOPLIST_FILE = MarketplaceKitDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.214alpha.MarketplaceKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		68E3E65022A8EEBA0051D131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E489D6EF354E1AEAD4EB0BF /* Pods-MarketplaceKitTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TMYGKKAAG;
+				INFOPLIST_FILE = MarketplaceKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.214alpha.MarketplaceKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarketplaceKitDemo.app/MarketplaceKitDemo";
+			};
+			name = Debug;
+		};
+		68E3E65122A8EEBA0051D131 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5918165A188981C3B26AEF5 /* Pods-MarketplaceKitTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TMYGKKAAG;
+				INFOPLIST_FILE = MarketplaceKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.214alpha.MarketplaceKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarketplaceKitDemo.app/MarketplaceKitDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68E3E61D22A8EE1A0051D131 /* Build configuration list for PBXProject "MarketplaceKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68E3E62922A8EE1A0051D131 /* Debug */,
+				68E3E62A22A8EE1A0051D131 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68E3E62B22A8EE1A0051D131 /* Build configuration list for PBXNativeTarget "MarketplaceKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68E3E62C22A8EE1A0051D131 /* Debug */,
+				68E3E62D22A8EE1A0051D131 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68E3E64122A8EE580051D131 /* Build configuration list for PBXNativeTarget "MarketplaceKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68E3E64222A8EE580051D131 /* Debug */,
+				68E3E64322A8EE580051D131 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68E3E64F22A8EEBA0051D131 /* Build configuration list for PBXNativeTarget "MarketplaceKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68E3E65022A8EEBA0051D131 /* Debug */,
+				68E3E65122A8EEBA0051D131 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68E3E61A22A8EE1A0051D131 /* Project object */;
+}
